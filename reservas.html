@@ -1,13 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservas Gordys</title>
+    <title>Reservas - Comidas Rápidas El Gordis</title>
 </head>
 <body>
-    <table lengh="center" wid>
 
+    <header>
+        <h1 align="center">Reserva Tu Mesa - Comidas Rápidas El Gordis</h1>
+    </header>
+    <table align="center" width="80%" border="1">
+        <tr>
+            <td>
+                <nav>
+                    <ul>
+                        <li><a href= "index.html">Inicio</a></li>
+                        <li><a href="menu.html">Menú</a></li>
+                        <li><a href="pedido.html">Pedido</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </td>
+        </tr>
+    </table>
+    <table align="center" border="1" width="80%">
+        <tr>
+            <th colspan="2" align="center">Formulario de Reserva</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form action="index.html" method="get">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required><br><br>
+
+                    <label for="telefono">Número de Teléfono:</label>
+                    <input type="number" id="telefono" name="telefono" required><br><br>
+
+                    <label for="cedula">Cédula:</label>
+                    <input type="text" id="cedula" name="cedula"><br><br>
+
+                    <label for="fecha">Fecha de Reserva:</label>
+                    <input type="datetime-local" id="fecha" name="fecha" required><br><br>
+
+                    <label for="personas">Número de Personas:</label>
+                    <input type="number" id="personas" name="personas" min="1" required><br><br>
+
+                    <button type="submit">Hacer Reserva</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table align="center" border="1" width="80%">
+        <tr>
+            <th colspan="2" align="center">Verificador de Reserva - Cédula</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form>
+                    <label for="cc">Ingresa tu Cédula para Verificar la Reserva:</label>
+                    <input type="text" id="cc" name="cc"><br><br>
+                    <button type="submit">Verificar Reserva</button>
+                </form>
+            </td>
+        </tr>
     </table>
 </body>
 </html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar Pedidos - Gordys Restaurant</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Administrar Pedidos - Gordys Restaurant</h1>
+    </header>
+
+    <table align="center" border="1" width="80%">
+        <tr>
+            <td colspan="2" align="center">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="menu.html">Menú</a></li>
+                        <li><a href="reservas.html">Reservas</a></li>
+                        <li><a href="pedido.html">Pedido</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="mapa.html">Mapa del Sitio</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                    </ul>
+                </nav>
+            </td>
+        </tr>
+
+        <!-- Formulario para crear nuevos pedidos -->
+        <tr>
+            <td colspan="2">
+                <h2 align="center">Nuevo Pedido</h2>
+                <form action="#" method="POST" align="center">
+                    <label for="nombre_cliente">Nombre del Cliente:</label><br>
+                    <input type="text" id="nombre_cliente" name="nombre_cliente" required><br><br>
+
+                    <label for="platillo">Platillo:</label><br>
+                    <select id="platillo" name="platillo" required>
+                        <option value="hamburguesa">Hamburguesa</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="ensalada">Ensalada</option>
+                        <option value="sopa">Sopa</option>
+                        <option value="pasta">Pasta</option>
+                    </select><br><br>
+
+                    <label for="cantidad">Cantidad:</label><br>
+                    <input type="number" id="cantidad" name="cantidad" required><br><br>
+
+                    <label for="direccion">Dirección de Entrega:</label><br>
+                    <input type="text" id="direccion" name="direccion" required><br><br>
+
+                    <label for="fecha">Fecha de Pedido:</label><br>
+                    <input type="date" id="fecha" name="fecha" required><br><br>
+
+                    <button type="submit">Realizar Pedido</button>
+                </form>
+            </td>
+        </tr>
+
+        <!-- Tabla de pedidos -->
+        <tr>
+            <td colspan="2">
+                <h2 align="center">Pedidos Realizados</h2>
+                <table align="center" border="1" width="80%">
+                    <tr>
+                        <th>Nombre del Cliente</th>
+                        <th>Platillo</th>
+                        <th>Cantidad</th>
+                        <th>Dirección de Entrega</th>
+                        <th>Fecha de Pedido</th>
+                    </tr>
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>Pizza</td>
+                        <td>2</td>
+                        <td>Calle 123, Ciénaga de Oro</td>
+                        <td>2025-03-22</td>
+                    </tr>
+                    <tr>
+                        <td>Ana Gómez</td>
+                        <td>Hamburguesa</td>
+                        <td>1</td>
+                        <td>Avenida 45, Ciénaga de Oro</td>
+                        <td>2025-03-21</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos López</td>
+                        <td>Ensalada</td>
+                        <td>3</td>
+                        <td>Calle 8, Ciénaga de Oro</td>
+                        <td>2025-03-20</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">
+                <footer>
+                    <p>&copy; 2025 Gordys Restaurant. Todos los derechos reservados.</p>
+                    <p>Creado por Luis Mario Regino</p>
+                </footer>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
